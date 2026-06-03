@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Resurface for X</title>
+  <meta name="description" content="Privacy Policy for Resurface for X, a Chrome extension. All data is stored locally. No data is collected or transmitted." />
+  <link rel="icon" href="icon128.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --border: rgba(255,255,255,0.07);
+      --text: #f0f0f0;
+      --muted: #6b6b6b;
+      --accent: #7c5cfc;
+      --accent-soft: rgba(124, 92, 252, 0.12);
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(10,10,10,0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+    }
+
+    .logo-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .back-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: var(--text);
+    }
+
+    /* ── CONTENT ── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px 100px;
+    }
+
+    .page-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 56px;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: var(--accent-soft);
+      border: 1px solid rgba(124,92,252,0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+    }
+
+    .highlight p {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .highlight strong {
+      color: var(--accent);
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 44px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--text);
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    ul li {
+      font-size: 14px;
+      color: var(--muted);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    footer span {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 14px 20px;
+      }
+
+      main {
+        padding: 48px 20px 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">
+      <img src="icon128.png" alt="Resurface icon" />
+      <span class="logo-text">Resurface for X</span>
+    </a>
+    <a class="back-link" href="index.html">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back
+    </a>
+  </header>
+
+  <main>
+    <p class="page-label">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: June 3, 2026 · Applies to the Resurface for X Chrome Extension</p>
+
+    <div class="highlight">
+      <p><strong>Short version:</strong> Resurface for X does not collect, transmit, store, or share any personal data. Everything stays on your device. There are no servers, no accounts, and no analytics.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Overview</h2>
+      <p>Resurface for X ("the Extension") is a Chrome browser extension developed by mxxfun. This Privacy Policy explains how the Extension handles information. By installing and using the Extension you agree to this policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Data We Collect</h2>
+      <p>The Extension does <strong>not</strong> collect any personal data. Specifically, we do not collect:</p>
+      <ul>
+        <li>Names, email addresses, or account information</li>
+        <li>Browsing history or URLs visited</li>
+        <li>IP addresses or device identifiers</li>
+        <li>Cookies or tracking identifiers</li>
+        <li>Usage analytics or telemetry</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Data Stored Locally</h2>
+      <p>The Extension stores the following data <strong>locally on your device only</strong>, using the Chrome <code>storage.local</code> API:</p>
+      <ul>
+        <li>URLs and content of posts you bookmark on X (Twitter)</li>
+        <li>Timestamps and spaced-repetition scheduling metadata for those bookmarks</li>
+        <li>Your extension preferences (e.g. recall frequency, notification settings)</li>
+      </ul>
+      <p>This data never leaves your browser. It is not sent to any external server, third party, or the developer.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Permissions Used</h2>
+      <p>The Extension requests the following Chrome permissions, each strictly necessary for core functionality:</p>
+      <ul>
+        <li><strong>storage</strong> — to save your bookmarks and settings locally in <code>chrome.storage.local</code></li>
+        <li><strong>alarms</strong> — to schedule periodic background reminders about forgotten bookmarks</li>
+        <li><strong>notifications</strong> — to send push reminders when a bookmark is due for review</li>
+        <li><strong>host permission for x.com / twitter.com</strong> — to detect when you bookmark a post and to inject ghost cards into your timeline</li>
+      </ul>
+      <p>No permission is used to collect, read, or transmit personal data.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Third-Party Services</h2>
+      <p>The Extension does not integrate with, send data to, or load resources from any third-party analytics, advertising, or tracking services.</p>
+      <p>The Extension communicates solely with <strong>x.com</strong> (to display post content that is already visible in your browser tab). No additional network requests are made.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Data Sharing</h2>
+      <p>We do not sell, rent, trade, or share any data — because we do not collect any data in the first place.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Data Retention &amp; Deletion</h2>
+      <p>All locally-stored data (bookmarks and settings) is retained on your device until you explicitly delete it. You can remove all stored data at any time via the Extension's Settings panel → <strong>"Clear all bookmarks"</strong>.</p>
+      <p>Uninstalling the Extension from Chrome will also remove all locally-stored data associated with it.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Children's Privacy</h2>
+      <p>The Extension is not directed at children under the age of 13. We do not knowingly collect personal information from children. Since no data is collected from any user, this applies equally to all age groups.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Changes to This Policy</h2>
+      <p>If this Privacy Policy is updated, the revised version will be posted at this URL with an updated "Last updated" date. Continued use of the Extension after changes constitutes acceptance of the revised policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Contact</h2>
+      <p>For questions about this Privacy Policy, please open an issue on the GitHub repository:</p>
+      <p><a href="https://github.com/mxxfun/resurface-for-x/issues" target="_blank" rel="noopener">github.com/mxxfun/resurface-for-x/issues</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 mxxfun · Resurface for X · Source-available under <a href="https://github.com/mxxfun/resurface-for-x/blob/main/LICENSE" target="_blank" rel="noopener">BUSL-1.1</a></span>
+  </footer>
+
+</body>
+</html>
